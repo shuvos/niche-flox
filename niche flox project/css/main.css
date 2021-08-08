@@ -1,0 +1,428 @@
+/* ######################### */
+/* universal css */
+/* ######################### */
+:root {
+    --primary-color: #726af2;
+    --primary-hover-color: #6156fa;
+    --primary-font-color: #000;
+    --secondary-font-color: rgb(59, 59, 59);
+    --body-color: rgb(228, 228, 228);
+}
+body {
+    background: var(--body-color);
+    height: 200vh;
+}
+nav {
+    background-color: var(--body-color);
+    color: var(--primary-font-color);
+    height: 100px;
+    transition: .2s;
+    -webkit-transition: .2s;
+    -moz-transition: .2s;
+    -ms-transition: .2s;
+    -o-transition: .2s;
+}
+.nav-link {
+    color: var(--gray);
+}
+.nav-link:hover {
+    color: var(--dark);
+}
+.nav-link.active {
+    color: var(--gray-dark);
+}
+.nav-changed-height {
+    height: 55px;
+}
+.logo {
+    height: 75px;
+    width: 150px;
+}
+.card-btn {
+    background: var(--primary-color);
+    color: var(--white);
+}
+.card-btn:hover {
+    background: var(--primary-hover-color);
+    color: var(--white);
+}
+ul {
+    list-style: none;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* ################################ */
+/* css for individual page */
+/* ################################ */
+
+
+/*########### home page css ##########*/
+
+
+/* hero area  */
+.hero {
+    background-color: var(--white);
+    margin-top: 100px;
+}
+.hero h1 {
+    color: var(--primary-font-color);
+    font-size: 30px;
+    text-transform: capitalize;
+}
+.hero h1 + p {
+    color: var(--secondary-font-color);
+}
+.hero-btn {
+    min-width: 18%;
+    background: var(--primary-color);
+    outline: var(--primary-color);
+    color: var(--white);
+}
+.hero-btn:hover {
+    color: var(--white);
+    background: var(--primary-hover-color);
+}
+
+/* browse area  */
+
+.browse-card {
+    display: flex;
+}
+.browse-single-card {
+    height: 80px;
+    width: 100px;
+    font-size: 30px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    box-shadow: 5px 4px 7px 0px rgba(177, 177, 177, 0.342);
+    cursor: pointer;
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+}
+.browse-single-card:hover {
+    transform: translateY(-10px);
+    -webkit-transform: translateY(-10px);
+    -moz-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    -o-transform: translateY(-10px);
+    box-shadow: none;
+}
+.browse-single-card img {
+    height: 40px;
+    width: 40px;
+    margin: 10px auto 0px;
+}
+.browse-single-card h5 {
+    font-size: 16px;
+}
+
+/* home category ** kitchen category ** garden category  */
+.home-category hr, .kitchen-category hr, .garden-category hr {
+    border: 1px solid #636363;
+}
+.home-category .card-title, .kitchen-category .card-title, .garden-category .card-title {
+    font-size: 18px;
+    text-transform: capitalize;
+}
+.card-btn-text .mt-2{
+    font-size: 12px;
+}
+
+/* newsletter css  */
+.newsletter {
+    background: white;
+}
+.newsletter img {
+    width: 200px;
+}
+.newsletter input {
+    min-width: 50%;
+    height: 30px;
+    border: 1px solid rgb(168, 168, 168);
+    background-color: #eaeaea;
+}
+.newsletter input:focus {
+    border: 1px solid rgb(168, 168, 168);
+    outline: none;
+}
+.newsletter button {
+    background-color: var(--primary-color);
+    border: none;
+    color: white;
+    height: 30px;
+    width: 40px;
+    border-radius: 0px 4px 4px 0px;
+    -webkit-border-radius: 0px 4px 4px 0px;
+    -moz-border-radius: 0px 4px 4px 0px;
+    -ms-border-radius: 0px 4px 4px 0px;
+    -o-border-radius: 0px 4px 4px 0px;
+    margin-bottom: 5px;
+    padding-bottom: 3px;
+}
+/* footer css  */
+
+footer h2 {
+    font-size: 18px;
+}
+footer p {
+    font-size: 13px;
+}
+.footer-nav {
+    font-size: 13px;
+}
+
+
+/* copyright css  */
+
+.copyright-nav li {
+    margin-right: 5%;
+}
+.social-links div img {
+    --img-height-width: 30px;
+    display: inline-block;
+    width: var(--img-height-width);
+    height: var(--img-height-width);
+    margin-left: 20px;
+}
+
+/*########### about us page css ##########*/
+/* main section  */
+    .main-content {
+        width: 75%;
+    }
+ .main-content h2 {
+     font-size: 25px;
+     margin-top: 20px;
+ }
+ /* contact form  */
+ .contact-form {
+     width: 50%;
+ }
+ .contact-form input, .contact-form textarea {
+     border: none;
+     outline: none;
+     border-bottom: 1px solid rgb(197, 197, 197);
+     padding: 10px;
+ }
+ /* core team css  */
+
+.core-team-img {
+    --img-height-width: 90px;
+    height: var(--img-height-width);
+    width: var(--img-height-width);
+}
+.core-team .card-title {
+    font-size: 12px;
+}
+.core-team .card-text {
+    font-size: 11px;
+}
+
+/*########### blog page css ##########*/
+
+/* recent posts  */
+.blog-recent-post h4 {
+    font-size: 16px;
+}
+.blog-recent-post .card-text {
+    font-size: 14px;
+}
+.blog-recent-post .card-btn {
+    font-size: 9px;
+}
+.blog-card-btn-text div:last-child {
+    font-size: 8px;
+}
+.recent-post-navigation-button p {
+    background: var(--primary-color);
+    color: #fff;
+    padding: 5px;
+    margin-left: 15px;
+    font-size: 12px;
+}
+.recent-post-navigation-button p:hover {
+    background-color: var(--primary-hover-color);
+
+}
+.recent-post-navigation-button p:hover a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* right column  */
+.blog-right-column {
+    background: rgb(185, 185, 185);
+}
+.blog-right-column h2 {
+    font-size: 25px;
+}
+.blog-right-column h3 {
+    font-size: 20px;
+}
+.blog-right-column input {
+    background: #fff;
+    outline: none;
+    border: none;
+    height: 30px;
+}
+.blog-right-column button {
+    background: rgb(134, 134, 134);
+    height: 30px;
+    width: 40px;
+    border: none;
+    outline: none;
+    margin-bottom: 5px;
+    padding: 2px;
+    border-radius: 0%;
+    -webkit-border-radius: 0%;
+    -moz-border-radius: 0%;
+    -ms-border-radius: 0%;
+    -o-border-radius: 0%;
+}
+.popular-post-single-card img {
+    width: 120px;
+    height: auto;
+}
+.popular-post-single-card p {
+    margin-top: 15px;
+    font-size: 16px;
+    line-height: 20px;
+    height: 76.7px;
+    background: rgb(255, 255, 255);
+}
+.blog-browse-content {
+    height: 15px;
+}
+
+/*########### contact us page css ##########*/
+
+.contact-form .btn {
+    background: var(--primary-color);
+    color: var(--white);
+}
+.contact-form .btn:hover {
+    background: var(--primary-hover-color);
+}
+/*############ search page ############# */
+
+.search-page {
+    background-color: rgb(112, 120, 233);
+    color: #000;
+    position: fixed;
+    top: 0;bottom: 0;left: 0;right: 0;
+    z-index: 9999;
+    opacity: .9;
+    justify-content: center;
+    align-items: center;
+}
+.search-page input {
+    height: 50px;
+    width: 300px;
+    font-size: 30px;
+}
+.search-page-btn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    font-size: 60px;
+    color: rgb(39, 39, 39);
+    cursor: pointer;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+}
+
+/* ######################## */
+/* responsive css */
+/* ######################## */
+
+
+@media only screen and (max-width: 576px) {
+    /*######### home page css ###########*/
+
+    /* hero area  */
+    .hero-btn {
+        width: 25%;
+    }
+    /* category area  */
+    .browse-single-card {
+        margin: 0 auto;
+    }
+}
+@media only screen and (max-width: 1196px) {
+    /*############ blog page css ############*/
+
+    /* right column */
+    .popular-post-single-card p {
+        font-size: 14px;
+    }
+}
+@media only screen and (max-width: 992px) {
+    /*############ blog page css ############*/
+
+    /* right column */
+    .social-links div img {
+        margin-left: 10px;
+    }
+    .blog-right-column input {
+        margin-bottom: 0 !important;
+        width: 100%;
+    }
+    .blog-right-column button {
+        width: 100%;
+    }
+    .popular-post-single-card {
+        flex-direction: column;
+    }
+    .popular-post-single-card img {
+        width: 100%;
+    }
+    .popular-post-single-card p {
+        margin-top: 0;
+    }
+    .blog-right-column h2 {
+        margin-bottom: 20px !important;
+    }
+}
+@media only screen and (max-width: 768px) {
+    /*############ blog page css ############*/
+
+    /* right column */
+    .popular-post-single-card p {
+        width: 100%;
+        font-size: 16px;
+    }
+    /*######## contact page css ######## */
+
+    /* contact form  */
+    .contact-form {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .main-content {
+        width: 100%;
+    }
+}
+
+/* testing css  */
+
+
+.blog-right-column .container {
+    position: sticky;
+    top: 110px;
+    bottom: 0;
+}
